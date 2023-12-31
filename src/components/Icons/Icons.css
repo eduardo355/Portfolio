@@ -1,0 +1,12 @@
+
+
+.JS {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: gray;
+}
+
+.JS:hover {
+    color: black;
+}
