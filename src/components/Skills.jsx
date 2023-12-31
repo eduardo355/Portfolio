@@ -4,7 +4,7 @@ import Html from "./Icons/Html"
 import Css from "./Icons/Css"
 import React from "./Icons/React"
 import React_Native from "./Icons/React_Native"
-import '../css/Skill.css'
+import './css/Skill.css'
 const Skills = () => {
     return (
         <section id="skills">

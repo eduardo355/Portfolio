@@ -1,5 +1,5 @@
 
-import '../css/AboutMe.css'
+import './css/AboutMe.css'
 const AboutMe = () => {
     return (
         <section id='about'>
