@@ -1,5 +1,5 @@
 
-import './css/Welcome.css'
+import '/css/Welcome.css'
 const Welcome = () => {
     return (
         <div id='Home' className="ContainerWelcome">
