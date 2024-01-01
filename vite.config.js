@@ -7,13 +7,13 @@ export default defineConfig({
   build: {
     rollupOptions: {
       external: [
-        '/css/Nav.css',
-        '/css/AboutMe.css',
-        '/css/ContactMe.css',
-        '/css/Footer.css',
-        '/css/Projects.css',
-        '/css/Skill.css',
-        '/css/Welcome.css'
+        'css/Nav.css',
+        'css/AboutMe.css',
+        'css/ContactMe.css',
+        'css/Footer.css',
+        'css/Projects.css',
+        'css/Skill.css',
+        'css/Welcome.css'
       ], // Ajusta esta línea según tu estructura de carpetas
     },
   },
