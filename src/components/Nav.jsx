@@ -1,5 +1,5 @@
 
-import '../css/Nav.css'
+import '../assets/css/Nav.css'
 
 const Nav = () => {
     return (
