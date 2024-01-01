@@ -1,5 +1,5 @@
 
-import '../assets/css/Welcome.css'
+import './Welcome.css'
 const Welcome = () => {
     return (
         <div id='Home' className="ContainerWelcome">

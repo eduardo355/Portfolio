@@ -1,0 +1,37 @@
+
+
+.ContainerWelcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 44vh; 
+    text-align: center; 
+    padding-bottom: 17vh;
+}
+
+.ContainerWelcome > span {
+    font-size: 3vw; 
+    line-height: 1.5; 
+    color: gray;
+}
+
+.ContainerWelcome > p {
+    max-width: 80%; 
+    font-size: 1.5vw;
+    line-height: 1.5;
+    color: gray;
+}
+
+strong {
+    color: #44749d;
+}
+
+@media (max-width: 767px) {
+    .ContainerWelcome > span {
+        font-size: 5vw; /* Ajustar el tamaño de la fuente para pantallas pequeñas */
+    }
+
+    .ContainerWelcome > p {
+        font-size: 3vw; /* Ajustar el tamaño de la fuente para pantallas pequeñas */
+    }
+}

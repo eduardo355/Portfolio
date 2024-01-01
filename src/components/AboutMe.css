@@ -1,0 +1,24 @@
+section {
+    padding: 20px;
+}
+
+.ContainerAbout {
+    display: flex;
+    flex-direction: column; /* Cambiar a columna para una mejor disposición en dispositivos pequeños */
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    color: gray;
+    text-align: center; /* Centrar el texto */
+}
+
+.ContainerAbout > p {
+    font-size: 18px;
+    max-width: 600px; /* Limitar el ancho del texto para una mejor legibilidad */
+    margin: 0 auto; /* Centrar el texto horizontalmente */
+}
+
+.ContainerAbout > img {
+    border-radius: 50%;
+    max-width: 100%; /* Asegurarse de que la imagen no exceda su contenedor */
+}
