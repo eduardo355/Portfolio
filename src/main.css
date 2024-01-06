@@ -1,19 +1,6 @@
 html {
     scroll-behavior: smooth;
 }
-
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    width: 60vw;
-}
-
 /* Consulta de medios para pantallas pequeñas (hasta 767px) */
 @media (max-width: 767px) {
     .container {

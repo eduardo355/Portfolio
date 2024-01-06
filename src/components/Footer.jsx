@@ -1,12 +1,29 @@
-import './Footer.css'
+import { ActiveDark } from "./store/DarkMode";
 
 const Footer = () => {
+    const { stateDark } = ActiveDark((state) => ({
+        stateDark: state.stateDark
+    }))
+
+    const footerStyles = {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        flexDirection: 'column',
+        marginTop: '10rem',
+        color: stateDark ? 'white' : 'gray',
+    };
+
+    const linkStyles = {
+        color: stateDark ? 'white' : 'gray',
+    };
+
     return (
-        <footer>
-            <div className="reserved">
+        <footer style={footerStyles}>
+            <div>
                 <span>© 2023 by Eduardo Tovar. All rights reserved.</span>
             </div>
-            <div className="Redes">
+            <div style={linkStyles}>
                 <a href="https://github.com/eduardo355" target='_blank' rel="noreferrer">
                     <svg 
                     xmlns="http://www.w3.org/2000/svg" 
