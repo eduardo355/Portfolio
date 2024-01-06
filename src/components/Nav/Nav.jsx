@@ -7,6 +7,7 @@ const Nav = () => {
     stateDark: state.stateDark
   }));
   const { optionDark } = ActiveDark();
+  console.log(stateDark);
 
   const navStyles = {
     display: 'flex',
@@ -31,8 +32,9 @@ const Nav = () => {
   };
 
   const hoverStyles = {
-    color: stateDark ? 'white' : 'black', // Ajusta el color al pasar el mouse según el modo
+    color: stateDark ? 'white' : 'gray', // Ajusta el color al pasar el mouse según el modo
   };
+
 
   return (
     <div style={navStyles}>
@@ -51,12 +53,14 @@ const Nav = () => {
       <a href='#Contact' style={linkStyles} onMouseEnter={() => stateDark && hoverStyles}>
         Contactame
       </a>
-      <div className='checkbox-wrapper-55'>
-        <label className='rocker rocker-small'>
-          <input type='checkbox' name='' id='' onChange={() => optionDark(!stateDark)} />
-          <span className='switch-left'>Yes</span>
-          <span className='switch-right'>No</span>
-        </label>
+      <div className="ContainerBtn">
+      <span style={hoverStyles}>Dark Mode</span>
+      <div className="checkbox-wrapper-54">
+          <label className="switch">
+            <input type="checkbox" onChange={()=> optionDark(!stateDark)} />
+            <span className="slider"></span>
+          </label>
+        </div>
       </div>
     </div>
   );
