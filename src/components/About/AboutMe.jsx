@@ -38,7 +38,7 @@ const AboutMe = () => {
       <br />
       <br />
       <br />
-      <h2>Sobre mi</h2>
+      <h2>Sobre Mi</h2>
       <div className="ContainerAbout" style={containerStyles}>
         <img src="./Perfil.png" width={250} alt="Foto de perfil" style={imageStyles} />
         <p style={paragraphStyles}>

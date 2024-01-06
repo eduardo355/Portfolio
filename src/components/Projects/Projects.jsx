@@ -62,7 +62,7 @@ const Projects = () => {
         <br />
         <br />
         <br />
-        <h2>Proyectos</h2>
+        <h2>Proyectos Personales</h2>
         <div className="ContainerCard" style={containerCardStyles}>
             <div className="card" style={cardStyles}>
             <div className="tittle" style={titleStyles}>

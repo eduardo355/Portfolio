@@ -54,7 +54,7 @@ const Nav = () => {
         Contactame
       </a>
       <div className="ContainerBtn">
-      <span style={hoverStyles}>Dark Mode</span>
+      <span style={hoverStyles}>{stateDark ? 'Dark Mode' : 'Light Mode'}</span>
       <div className="checkbox-wrapper-54">
           <label className="switch">
             <input type="checkbox" onChange={()=> optionDark(!stateDark)} />
