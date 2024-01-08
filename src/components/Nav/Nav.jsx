@@ -14,7 +14,7 @@ const Nav = () => {
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    gap: '10px',
+    gap: '20px',
     padding: '15px',
     position: 'fixed',
     top: '0',
