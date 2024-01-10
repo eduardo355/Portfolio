@@ -66,7 +66,7 @@ const Projects = () => {
         <div className="ContainerCard" style={containerCardStyles}>
             <div className="card" style={cardStyles}>
             <div className="tittle" style={titleStyles}>
-                Poke Api
+                POKE - API
             </div>
             <div className="description" style={descriptionStyles}>
                 Desarrollé una aplicación web de PokeDex utilizando Vite y la
@@ -120,7 +120,7 @@ const Projects = () => {
 
             <div className="card" style={cardStyles}>
                 <div className="tittle" style={titleStyles}>
-                    TRANSLATE
+                    TRADUCTOR
                 </div>
                 <div className="description" style={descriptionStyles}>
                 Desarrollé una aplicación de traducción utilizando React y Vite, 
@@ -136,6 +136,32 @@ const Projects = () => {
                 <div className="btn" style={buttonStyles}>
                     <a
                     href="https://translate-v1.vercel.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    style={linkStyles}
+                    >
+                    Ver proyecto
+                    </a>
+                </div>
+            </div>
+
+            <div className="card" style={cardStyles}>
+                <div className="tittle" style={titleStyles}>
+                    RICK AND MORTY - API
+                </div>
+                <div className="description" style={descriptionStyles}>
+                Rick and Morty Explorer es una aplicación web desarrollada 
+                con React y Vite que permite a los usuarios explorar información 
+                sobre los personajes de la famosa serie de televisión 
+                "Rick and Morty". La aplicación utiliza la API pública de Rick 
+                and Morty para obtener datos actualizados sobre los personajes.
+                </div>
+                <div className="img" style={imageStyles}>
+                    <img src="../RickAndMorty.png" alt="Imagen" height={300} width={600} />
+                </div>
+                <div className="btn" style={buttonStyles}>
+                    <a
+                    href="https://rick-and-morty-api-liart.vercel.app/"
                     target="_blank"
                     rel="noreferrer"
                     style={linkStyles}
