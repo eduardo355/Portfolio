@@ -1,9 +1,4 @@
 html {
     scroll-behavior: smooth;
 }
-/* Consulta de medios para pantallas pequeñas (hasta 767px) */
-@media (max-width: 767px) {
-    .container {
-        width: 100%; /* Hacer que ocupe todo el ancho en pantallas pequeñas */
-    }
-}
+

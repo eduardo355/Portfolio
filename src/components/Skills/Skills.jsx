@@ -4,35 +4,18 @@ import Html from "../Icons/Html";
 import Css from "../Icons/Css";
 import ReactIcon from "../Icons/React";
 import ReactNativeIcon from "../Icons/React_Native";
-import { ActiveDark } from "../store/DarkMode";
+
 
 const Skills = () => {
-    const { stateDark } = ActiveDark((state) => ({
-        stateDark: state.stateDark
-    }));
-
-    const sectionStyles = {
-        padding: "20px",
-        backgroundColor: stateDark ? "black" : "transparent",
-        color: stateDark ? "white" : "black",
-    };
-
-    const iconsContainerStyles = {
-        display: "flex",
-        flexWrap: "wrap",
-        gap: "3rem",
-        padding: "1rem",
-        justifyContent: "center",
-    };
 
     return (
-        <section id="skills" style={sectionStyles}>
+        <section id="skills" className=" p-5">
         <br />
         <br />
         <br />
         <br />
-        <h2>Habilidades</h2>
-        <div className="icons" style={iconsContainerStyles}>
+        <h2 className="text-2xl font-bold mb-4 dark:text-white">Habilidades</h2>
+        <div className=" flex flex-wrap gap-10 p-3 justify-center" >
             <Html  />
             <Css  />
             <IconJS  />

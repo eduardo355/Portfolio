@@ -1,69 +1,70 @@
 
 import './Nav.css';
-import { ActiveDark } from '../store/DarkMode';
+import { useEffect, useState } from 'react';
 
 const Nav = () => {
-  const { stateDark } = ActiveDark((state) => ({
-    stateDark: state.stateDark
-  }));
-  const { optionDark } = ActiveDark();
-  console.log(stateDark);
+  const [theme, setTheme] = useState(() => {
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      return 'dark';
+    }
 
-  const navStyles = {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    alignItems: 'center',
-    gap: '20px',
-    padding: '15px',
-    position: 'fixed',
-    top: '0',
-    left: '0',
-    right: '0',
-    width: '100%',
-    boxSizing: 'border-box',
-    backgroundColor: stateDark ? 'black' : 'white', // Cambia el fondo en modo oscuro
+    return 'light';
+  });
+
+  const [menuVisible, setMenuVisible] = useState(false);
+
+  useEffect(() => {
+    if (theme === 'dark') {
+      document.querySelector('html').classList.add('dark');
+    } else {
+      document.querySelector('html').classList.remove('dark');
+    }
+  }, [theme]);
+
+  const handleChangeTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
 
-  const linkStyles = {
-    cursor: 'pointer',
-    color: stateDark ? 'white' : 'gray', // Ajusta el color del texto según el modo
-    textDecoration: 'none',
+  const toggleMenu = () => {
+    setMenuVisible(!menuVisible);
   };
-
-  const hoverStyles = {
-    color: stateDark ? 'white' : 'gray', // Ajusta el color al pasar el mouse según el modo
-  };
-
 
   return (
-    <div style={navStyles}>
-      <a href='#Home' style={linkStyles} onMouseEnter={() => stateDark && hoverStyles}>
-        Inicio
-      </a>
-      <a href='#Projects' style={linkStyles} onMouseEnter={() => stateDark && hoverStyles}>
-        Proyectos
-      </a>
-      <a href='#skills' style={linkStyles} onMouseEnter={() => stateDark && hoverStyles}>
-        Habilidades
-      </a>
-      <a href='#about' style={linkStyles} onMouseEnter={() => stateDark && hoverStyles}>
-        Sobre mi
-      </a>
-      <a href='#Contact' style={linkStyles} onMouseEnter={() => stateDark && hoverStyles}>
-        Contactame
-      </a>
-      <div className="ContainerBtn">
-      <span style={hoverStyles}>{stateDark ? 'Modo Oscuro' : 'Modo Claro'}</span>
-      <div className="checkbox-wrapper-54">
-          <label className="switch">
-            <input type="checkbox" onChange={()=> optionDark(!stateDark)} />
-            <span className="slider"></span>
-          </label>
-        </div>
-      </div>
+    <div className='flex flex-col sm:flex-row justify-center items-center gap-5 p-4 fixed top-0 left-0 right-0 w-full bg-white dark:bg-black max-sm:flex-col max-sm:w-svw'>
+      <button className="sm:hidden text-gray-500 text-lg" onClick={toggleMenu}>
+        Mostrar Menú
+      </button>
+      {!menuVisible && (
+        <>
+          <a href='#Home' className='text-gray-500 text-lg hover:text-black hover:dark:text-white'>
+            Inicio
+          </a>
+          <a href='#Projects' className='text-gray-500 text-lg hover:text-black hover:dark:text-white'>
+            Proyectos
+          </a>
+          <a href='#skills' className='text-gray-500 text-lg hover:text-black hover:dark:text-white'>
+            Habilidades
+          </a>
+          <a href='#about' className='text-gray-500 text-lg hover:text-black hover:dark:text-white'>
+            Sobre mi
+          </a>
+          <a href='#Contact' className='text-gray-500 text-lg hover:text-black hover:dark:text-white'>
+            Contactame
+          </a>
+          <div className="flex items-center justify-center flex-row-reverse gap-4">
+            <span className='text-gray-500 text-lg'>{theme === 'dark' ? 'Modo Claro' : 'Modo Oscuro'}</span>
+            <div className="checkbox-wrapper-54">
+              <label className="switch">
+                <input type="checkbox" checked={theme === 'dark'} onChange={() => handleChangeTheme()} />
+                <span className="slider"></span>
+              </label>
+            </div>
+          </div>
+        </>
+      )}
     </div>
   );
 };
 
 export default Nav;
+

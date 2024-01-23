@@ -1,31 +1,18 @@
-import { ActiveDark } from '../store/DarkMode';
 
 const Css = () => {
-  const { stateDark } = ActiveDark((state) => ({
-    stateDark: state.stateDark,
-  }));
 
-  const iconStyles = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    color: stateDark ? 'white' : 'currentColor',
-  };
 
-  const svgStyles = {
-    width: '55px',
-    stroke: 'currentColor',
-    fill: stateDark ? 'white' : 'currentColor',
-  };
 
   return (
-    <div style={iconStyles}>
+    <div className=" flex flex-col items-center text-gray-400 hover:dark:text-white">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"
         y="0px"
         viewBox="0 0 50 50"
-        style={svgStyles}
+        width={60}
+        stroke="currentColor"
+        fill="currentColor"
       >
         <path
           fillRule="evenodd"

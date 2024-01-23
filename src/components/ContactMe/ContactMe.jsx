@@ -1,73 +1,19 @@
-import { ActiveDark } from "../store/DarkMode";
 
 const ContactMe = () => {
-    const { stateDark } = ActiveDark((state) => ({
-        stateDark: state.stateDark
-    }));
-
-    const sectionStyles = {
-        padding: '20px',
-        backgroundColor: stateDark ? 'black' : 'transparent',
-        color: stateDark ? 'white' : 'black',
-    };
-
-    const containerStyles = {
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: '1rem',
-    };
-
-    const formStyles = {
-        display: 'flex',
-        flexDirection: 'column',
-        maxWidth: '500px',
-        width: '100%',
-    };
-
-    const inputStyles = {
-        width: '100%',
-        padding: '1rem',
-        fontSize: '17px',
-        marginBottom: '1rem',
-        borderRadius: '5px',
-        border: `0.5px solid ${stateDark ? 'gray' : 'black'}`,
-        boxSizing: 'border-box',
-    };
-
-    const textareaStyles = {
-        width: '100%',
-        padding: '1rem',
-        fontSize: '17px',
-        marginBottom: '1rem',
-        borderRadius: '5px',
-        border: `0.5px solid ${stateDark ? 'gray' : 'black'}`,
-        boxSizing: 'border-box',
-        resize: 'vertical',
-    };
-
-    const buttonStyles = {
-        backgroundColor: 'transparent',
-        border: 'none',
-        fontSize: '16px',
-        cursor: 'pointer',
-        fontWeight: 'bold',
-        color: stateDark ? 'white' : 'black',
-    };
 
     return (
-        <section id='Contact' style={sectionStyles}>
+        <section id='Contact' className="p-5 w-2/3 dark:text-white max-sm:w-full">
             <br />
             <br />
             <br />
             <br />
-            <h2>Contactame</h2>
-            <div className="ContainerContacto" style={containerStyles}>
-                <form method="POST" action="https://formsubmit.co/tovareduardo75@gmail.com" style={formStyles}>
-                    <input type="text" name='name' placeholder="Nombre" style={inputStyles} />
-                    <input type="email" name='email' placeholder="Correo" style={inputStyles} />
-                    <textarea name='message' cols="30" rows="5" placeholder="Mensaje" style={textareaStyles}></textarea>
-                    <button style={buttonStyles}>Enviar</button>
+            <h2 className="text-2xl font-bold dark:text-white">Contactame</h2>
+            <div className=" flex items-center justify-center p-4">
+                <form method="POST" action="https://formsubmit.co/tovareduardo75@gmail.com" className=" flex flex-col w-3/4 max-sm:w-11/12">
+                    <input type="text" name='name' placeholder="Nombre" className=" w-full p-4 text-base mb-4 rounded-md border border-gray-400 focus:outline-none"/>
+                    <input type="email" name='email' placeholder="Correo" className="w-full p-4 text-base mb-4 rounded-md border border-gray-400 focus:outline-none" />
+                    <textarea name='message' cols="30" rows="5" placeholder="Mensaje" className=" p-4 text-base mb-4 rounded-md border border-gray-400 resize-y"></textarea>
+                    <button className=" bg-transparent border-none text-base font-bold text-gray-500">Enviar</button>
                 </form>
             </div>
         </section>

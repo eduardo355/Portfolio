@@ -1,47 +1,16 @@
-import { ActiveDark } from '../store/DarkMode';
 
 const AboutMe = () => {
-  const { stateDark } = ActiveDark((state) => ({
-    stateDark: state.stateDark,
-  }));
-
-  const sectionStyles = {
-    padding: '20px',
-    backgroundColor: stateDark ? 'black' : 'transparent',
-    color: stateDark ? 'white' : 'black',
-  };
-
-  const containerStyles = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    gap: '1rem',
-    padding: '1rem',
-    textAlign: 'center',
-  };
-
-  const paragraphStyles = {
-    fontSize: '18px',
-    maxWidth: '600px',
-    margin: '0 auto',
-    color: stateDark ? 'white' : 'gray',
-  };
-
-  const imageStyles = {
-    borderRadius: '50%',
-    maxWidth: '100%',
-  };
 
   return (
-    <section id='about' style={sectionStyles}>
+    <section id='about' className=' p-5'>
       <br />
       <br />
       <br />
       <br />
-      <h2>Sobre Mi</h2>
-      <div className="ContainerAbout" style={containerStyles}>
-        <img src="./Perfil.png" width={250} alt="Foto de perfil" style={imageStyles} />
-        <p style={paragraphStyles}>
+      <h2 className='text-2xl font-bold dark:text-white'>Sobre Mi</h2>
+      <div className=" flex flex-col items-center gap-4 p-4 text-center" >
+        <img src="./Perfil.png" className=" rounded-full" width={250} alt="Foto de perfil" />
+        <p className=' text-xl w-[600px] text-gray-500 max-sm:w-full'>
           Estudiante comprometido de Ingeniería en Tecnología del Software, enfocado en la exploración y
           comprensión profunda de la programación. Mi trayectoria académica se fusiona con una pasión por
           abordar desafíos y resolver problemas mediante el código. Busco oportunidades para crecer y
@@ -49,7 +18,7 @@ const AboutMe = () => {
         </p>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default AboutMe;
+export default AboutMe

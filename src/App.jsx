@@ -6,28 +6,14 @@ import AboutMe from './components/About/AboutMe';
 import ContactMe from './components/ContactMe/ContactMe';
 import './main.css';
 import Footer from './components/Footer';
-import { ActiveDark } from './components/store/DarkMode';
 
 function App() {
-  const { stateDark } = ActiveDark((state) => ({
-    stateDark: state.stateDark
-  }));
 
-  const containerStyles = {
-    display: 'flex',
-    flexDirection: 'column',
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: stateDark ? 'black' : 'white',
-    margin: 'auto', 
-    padding: '20px',
-    width: '60vw', 
-  };
 
 
   return (
-    <main style={{ backgroundColor: stateDark ? 'black' : 'transparent' }}>
-      <div className="container" style={{ ...containerStyles }}>
+    <main className=' bg-transparent dark:bg-black  '>
+      <div className="container flex flex-col items-center justify-center m-auto p-5m w-2/3 max-sm:w-full" >
         <Nav />
         <Welcome />
         <Projects />
