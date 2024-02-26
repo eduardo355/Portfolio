@@ -4,9 +4,6 @@ const Footer = () => {
 
     return (
         <footer className=" flex items-center justify-center flex-col mt-3 text-gray-500">
-            <div>
-                <span>© 2023 by Eduardo Tovar. All rights reserved.</span>
-            </div>
             <div >
                 <a href="https://github.com/eduardo355" target='_blank' rel="noreferrer">
                     <svg 

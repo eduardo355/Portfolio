@@ -5,8 +5,6 @@ const Projects = () => {
         <section id="Projects" className=" p-5 mt-40 bg-transparen">
             <br />
             <br />
-            <br />
-            <br />
             <h2 className=" text-2xl font-bold mb-4 dark:text-white">Proyectos Personales</h2>
             <div className=" flex flex-col mb-4 justify-center" >
 
@@ -14,7 +12,7 @@ const Projects = () => {
                     <div className="text-2xl mb-3 font-bold text-gray-500 dark:text-white">
                         CALCULADORA
                     </div>
-                    <div className=" text-gray-500 dark:text-white">
+                    <div className=" text-gray-500 text-balance text-center">
                         Desarrollé una calculadora interactiva utilizando 
                         las tecnologías modernas de React y Vite. Esta calculadora 
                         no solo realiza operaciones matemáticas básicas como suma, 
@@ -40,7 +38,7 @@ const Projects = () => {
                     <div className="text-2xl mb-3 font-bold text-gray-500 dark:text-white" >
                         POKE - API
                     </div>
-                    <div className=" text-gray-500 dark:text-white">
+                    <div className=" text-gray-500 text-balance text-center">
                         Desarrollé una aplicación web de PokeDex utilizando Vite y la
                         PokeAPI para obtener datos de Pokémon. La aplicación ofrece una
                         experiencia de usuario fluida al explorar y buscar Pokémon, con un
@@ -67,7 +65,7 @@ const Projects = () => {
                     <div className="text-2xl mb-3 font-bold text-gray-500 dark:text-white" >
                         TODO
                     </div>
-                    <div className=" text-gray-500 dark:text-white">
+                    <div className=" text-gray-500 text-balance text-center">
                         Cree una sencilla aplicación TODO utilizando HTML y JavaScript. Los
                         usuarios pueden agregar, marcar como completadas y eliminar tareas.
                         La interfaz es intuitiva, permitiendo una gestión eficiente de
@@ -94,7 +92,7 @@ const Projects = () => {
                     <div className="text-2xl mb-3 font-bold text-gray-500 dark:text-white"  >
                         TRADUCTOR
                     </div>
-                    <div className=" text-gray-500 dark:text-white">
+                    <div className=" text-gray-500 text-balance text-center">
                         Desarrollé una aplicación de traducción utilizando React y Vite,
                         integrando la API de Traductor de Google mediante RapidAPI.
                         Permite a los usuarios ingresar texto en un idioma y obtener
@@ -121,7 +119,7 @@ const Projects = () => {
                     <div className="text-2xl mb-3 font-bold text-gray-500 dark:text-white" >
                         RICK AND MORTY - API
                     </div>
-                    <div className=" text-gray-500 dark:text-white">
+                    <div className=" text-gray-500  text-balance text-center">
                         Rick and Morty Explorer es una aplicación web desarrollada
                         con React y Vite que permite a los usuarios explorar información
                         sobre los personajes de la famosa serie de televisión

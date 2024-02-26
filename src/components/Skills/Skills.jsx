@@ -12,8 +12,6 @@ const Skills = () => {
         <section id="skills" className=" p-5">
         <br />
         <br />
-        <br />
-        <br />
         <h2 className="text-2xl font-bold mb-4 dark:text-white">Habilidades</h2>
         <div className=" flex flex-wrap gap-10 p-3 justify-center" >
             <Html  />

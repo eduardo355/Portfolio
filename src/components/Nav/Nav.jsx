@@ -11,8 +11,6 @@ const Nav = () => {
     return 'light';
   });
 
-  const [menuVisible, setMenuVisible] = useState(false);
-
   useEffect(() => {
     if (theme === 'dark') {
       document.querySelector('html').classList.add('dark');
@@ -25,16 +23,9 @@ const Nav = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
 
-  const toggleMenu = () => {
-    setMenuVisible(!menuVisible);
-  };
 
   return (
-    <div className='flex flex-col sm:flex-row justify-center items-center gap-5 p-4 fixed top-0 left-0 right-0 w-full bg-white dark:bg-black max-sm:flex-col max-sm:w-svw'>
-      <button className="sm:hidden text-gray-500 text-lg" onClick={toggleMenu}>
-        Mostrar Menú
-      </button>
-      {!menuVisible && (
+    <div className='flex flex-col sm:flex-row justify-center items-center gap-5 p-4 fixed top-0 left-0 right-0 w-full bg-white dark:bg-black max-sm:flex-col max-sm:w-svw max-sm:hidden'>
         <>
           <a href='#Home' className='text-gray-500 text-lg hover:text-black hover:dark:text-white'>
             Inicio
@@ -52,7 +43,6 @@ const Nav = () => {
             Contactame
           </a>
           <div className="flex items-center justify-center flex-row-reverse gap-4">
-            <span className='text-gray-500 text-lg'>{theme === 'dark' ? 'Modo Claro' : 'Modo Oscuro'}</span>
             <div className="checkbox-wrapper-54">
               <label className="switch">
                 <input type="checkbox" checked={theme === 'dark'} onChange={() => handleChangeTheme()} />
@@ -61,7 +51,6 @@ const Nav = () => {
             </div>
           </div>
         </>
-      )}
     </div>
   );
 };

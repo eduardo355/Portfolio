@@ -2,7 +2,7 @@
 const React_Native = () => {
     
       return (
-        <div className=" flex flex-col items-center text-gray-400 hover:dark:text-white">
+        <div className=" flex flex-col items-center text-gray-400 hover:dark:text-white hover:text-black">
             <svg 
             xmlns="http://www.w3.org/2000/svg" 
             x="0px" 

@@ -5,8 +5,6 @@ const ContactMe = () => {
         <section id='Contact' className="p-5 w-2/3 dark:text-white max-sm:w-full">
             <br />
             <br />
-            <br />
-            <br />
             <h2 className="text-2xl font-bold dark:text-white">Contactame</h2>
             <div className=" flex items-center justify-center p-4">
                 <form method="POST" action="https://formsubmit.co/tovareduardo75@gmail.com" className=" flex flex-col w-3/4 max-sm:w-11/12">
