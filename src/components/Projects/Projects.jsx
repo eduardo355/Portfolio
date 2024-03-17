@@ -1,4 +1,4 @@
-import PROJECTS from "./Projects";
+import PROJECTS from "./ProjectsArray"
 const Projects = () => {
 
     return (
@@ -18,7 +18,7 @@ const Projects = () => {
                                     {projecto.descripcion}
                                 </div>
                                 <div className=" flex items-center justify-center p-4">
-                                    <img src={projecto.img} alt="Imagen" width={700} />
+                                    <img src={projecto.img} alt={projecto.name} width={700} />
                                 </div>
                                 <div className=" flex justify-center gap-6 ">
                                     <a
@@ -41,11 +41,10 @@ const Projects = () => {
                             </div>
                     )})
                 }
-
             </div>
         </section>
-    );
-};
+    )
+}
 
-export default Projects;
+export default Projects
 

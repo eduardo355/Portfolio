@@ -8,9 +8,6 @@ import Footer from './components/Footer';
 import '@fontsource-variable/jetbrains-mono';
 
 function App() {
-
-
-
   return (
     <main className=' bg-transparent dark:bg-black'>
       <div className="container flex flex-col items-center justify-center m-auto p-5m w-2/3 max-sm:w-full" >
@@ -25,9 +22,9 @@ function App() {
         <Footer />
       </div>
     </main>
-  );
+  )
 }
 
-export default App;
+export default App
 
 
