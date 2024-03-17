@@ -25,7 +25,7 @@ const Nav = () => {
 
 
   return (
-    <div className='flex flex-col sm:flex-row justify-center items-center gap-5 p-4 fixed top-0 left-0 right-0 w-full bg-white dark:bg-black max-sm:flex-col max-sm:w-svw max-sm:hidden'>
+    <div className='flex flex-col sm:flex-row justify-center items-center gap-5 p-4 fixed top-0 left-0 right-0 bg-white dark:bg-black max-sm:flex-col max-sm:w-svw max-sm:hidden'>
         <>
           <a href='#Home' className='text-gray-500 text-lg hover:text-black hover:dark:text-white'>
             Inicio
