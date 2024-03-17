@@ -1,6 +1,6 @@
 
 
-export const PROJECTS = [
+const PROJECTS = [
     {
         id: 1,
         name: "CALCULADORA",
@@ -34,3 +34,5 @@ export const PROJECTS = [
         git: "https://github.com/eduardo355/RickAndMorty-API.git"
     }
 ]
+
+export default PROJECTS
