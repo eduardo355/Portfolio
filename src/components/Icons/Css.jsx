@@ -1,8 +1,4 @@
-
 const Css = () => {
-
-
-
   return (
     <div className=" flex flex-col items-center text-gray-400 hover:dark:text-white hover:text-black">
       <svg
@@ -21,7 +17,7 @@ const Css = () => {
       </svg>
       <span>CSS</span>
     </div>
-  );
-};
+  )
+}
 
-export default Css;
+export default Css
