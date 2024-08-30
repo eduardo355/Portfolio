@@ -6,17 +6,19 @@ import ReactIcon from '../Icons/React'
 import ReactNativeIcon from '../Icons/React_Native'
 import Ts from '../Icons/Ts'
 import Vue from '../Icons/Vue'
+import { Next } from '../Icons/Next'
 
 const Skills = () => {
   return (
     <section id="skills" className="p-5">
-      <h2 className="text-2xl font-bold mb-4 dark:text-white">Habilidades</h2>
+      <h2 className="text-3xl font-bold mb-4 dark:text-white">Habilidades</h2>
       <div className="flex flex-wrap gap-10 p-3 justify-center">
         <Html />
         <Css />
         <IconJS />
         <Ts />
         <ReactIcon />
+        <Next />
         <ReactNativeIcon />
         <Vue />
         <Php />

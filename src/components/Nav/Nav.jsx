@@ -43,6 +43,13 @@ const Nav = () => {
           Inicio
         </a>
         <a
+          href="#laboral"
+          onClick={() => setMenu(!menu)}
+          className="text-gray-500 text-lg hover:text-black hover:dark:text-white"
+        >
+          Eperiencia Laboral
+        </a>
+        <a
           href="#Projects"
           onClick={() => setMenu(!menu)}
           className="text-gray-500 text-lg hover:text-black hover:dark:text-white"

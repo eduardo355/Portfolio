@@ -1,7 +1,7 @@
 const AboutMe = () => {
   return (
     <section id="about" className=" p-5">
-      <h2 className="text-2xl font-bold dark:text-white">Sobre Mi</h2>
+      <h2 className="text-3xl font-bold dark:text-white">Sobre Mi</h2>
       <div className=" flex flex-col items-center gap-4 p-4 text-center">
         <img
           src="./Perfil.png"
