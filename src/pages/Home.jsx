@@ -10,7 +10,7 @@ import { ExperienceLaboral } from '../components/experienceLaboral/ExperienceLab
 const Home = () => {
   return (
     <div className="flex flex-col items-center">
-      <div className="w-1/2 max-sm:w-full relative">
+      <div className="w-1/2 max-2xl:w-full max-sm:w-full relative">
         <div className="h-screen">
           <Nav />
           <Welcome />
